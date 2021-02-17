@@ -204,6 +204,17 @@ public class MyoDataCollector extends AbstractDeviceListener {
 					maxIndex = i;
 				}
 			}
+			
+			//minimal activity (rms channel sum) threshold to avoid unwanted activations
+			int sum = 0;
+			for (int i = 0; i < rms.length; i++) {
+				sum += rms[i];
+			}
+			
+			if (sum < 100){
+				maxIndex = 8;
+			}
+			
 			if (ev3thread != null) {
 				ev3thread.setIndex(maxIndex);
 			}
