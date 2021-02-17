@@ -64,7 +64,7 @@ public class EV3thread extends Thread {
 				} catch (RemoteException ex) {
 					ex.printStackTrace();
 				}
-			} else if (chosenIndex == 3) {
+			} else if (chosenIndex == 7) {
 				// ulnar deviation => move robot forwards
 				try {
 					motorB.forward();
@@ -72,8 +72,8 @@ public class EV3thread extends Thread {
 				} catch (RemoteException ex) {
 					ex.printStackTrace();
 				}
-			} else if (chosenIndex == 7) {
-				// fist => move robot backwards
+			} else if (chosenIndex == 6) {
+				// palm out => move robot backwards
 				try {
 					motorB.backward();
 					motorC.backward();

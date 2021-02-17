@@ -12,9 +12,9 @@ public class EV3myKeyListener extends KeyAdapter {
 
 	public void keyPressed(KeyEvent evt) {
 		if (evt.getKeyCode() == KeyEvent.VK_UP) {
-			ev3thread.setIndex(3);
-		} else if (evt.getKeyCode() == KeyEvent.VK_DOWN) {
 			ev3thread.setIndex(7);
+		} else if (evt.getKeyCode() == KeyEvent.VK_DOWN) {
+			ev3thread.setIndex(6);
 		} else if (evt.getKeyCode() == KeyEvent.VK_LEFT) {
 			ev3thread.setIndex(1);
 		} else if (evt.getKeyCode() == KeyEvent.VK_RIGHT) {
