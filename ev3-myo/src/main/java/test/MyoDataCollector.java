@@ -211,7 +211,7 @@ public class MyoDataCollector extends AbstractDeviceListener {
 				sum += rms[i];
 			}
 			
-			if (sum < 100){
+			if (sum < 90){
 				maxIndex = 8;
 			}
 			
