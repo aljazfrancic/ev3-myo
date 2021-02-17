@@ -65,7 +65,7 @@ public class EV3thread extends Thread {
 					ex.printStackTrace();
 				}
 			} else if (chosenIndex == 7) {
-				// ulnar deviation => move robot forwards
+				// fist => move robot forwards
 				try {
 					motorB.forward();
 					motorC.forward();
