@@ -192,7 +192,8 @@ public class MyoDataCollector extends AbstractDeviceListener {
 			}
 
 			// calculate neural network outputs
-			INDArray indaInputs = Nd4j.create(scaledInputs);
+		    int[] shape = new int[]{1, scaledInputs.length};
+			INDArray indaInputs = Nd4j.create(scaledInputs, shape);
 			INDArray indaOutputs = neuralNetworkModel.output(indaInputs);
 			double[] outputs = indaOutputs.toDoubleVector();
 

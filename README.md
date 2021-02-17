@@ -16,6 +16,7 @@
 	* To get required dependencies open cmd and move to ev3-myo subfolder using `cd` and then run the command `mvn eclipse:eclipse`. 
 * [leJOS plugin for Eclipse](https://sourceforge.net/p/lejos/wiki/Installing%20the%20Eclipse%20plugin/) 
 	* You will need to include the leJOS library in you project manually, by right-clicking the project in Eclipse after import, clicking Properties > Java Build Path > Libraries > Add Library and choose LeJOS Library Container > Next > Finish. 
+	* [In case of problems](https://stackoverflow.com/questions/11896958/changing-classpath-in-eclipse/11897245#11897245)  
 * [Pair the EV3 brick with your computer via Bluetooth and create PAN](https://sourceforge.net/p/lejos/wiki/Configuring%20Bluetooth%20PAN/) 
 	* Every time you reboot or disconnect from the Bluetooth PAN and you want to work with the EV3 brick again, you need to go to Control Panel > Hardware and Sound > Devices and Printers > right-click on you EV3 brick > Connect using > Access point to connect to the EV3 brick. You can also create a shortcut. 
 ## To train your own models using the neural-net project, you will require ## 
