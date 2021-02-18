@@ -20,12 +20,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.deeplearning4j</groupId>
     <artifactId>ev3-myo</artifactId>
     <version>1.0.0-beta</version>
-    <name>Introduction to DL4J</name>
-    <description>A set of examples introducing the DL4J framework</description>
+    <name>ev3-myo</name>
+    <description>LEGO Mindstorms control using the Myo armnband.</description>
 
     <properties>
         <dl4j-master.version>1.0.0-beta</dl4j-master.version>
@@ -141,26 +140,6 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.0.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-default</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>[${maven.minimum.version},)</version>
-                                    <message>********** Minimum Maven Version is ${maven.minimum.version}. Please upgrade Maven before continuing (run "mvn --version" to check). **********</message>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -168,30 +147,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.lewisd</groupId>
-                <artifactId>lint-maven-plugin</artifactId>
-                <version>0.0.11</version>
-                <configuration>
-                    <failOnViolation>true</failOnViolation>
-                    <onlyRunRules>
-                        <rule>DuplicateDep</rule>
-                        <rule>RedundantPluginVersion</rule>
-                        <!-- Rules incompatible with Java 9
-                        <rule>VersionProp</rule>
-                        <rule>DotVersionProperty</rule> -->
-                    </onlyRunRules>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>pom-lint</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -248,33 +203,5 @@
                 </executions>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>com.lewisd</groupId>
-                                        <artifactId>lint-maven-plugin</artifactId>
-                                        <versionRange>[0.0.11,)</versionRange>
-                                        <goals>
-                                            <goal>check</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 </project>

@@ -205,13 +205,13 @@ public class MyoDataCollector extends AbstractDeviceListener {
 				}
 			}
 			
-			//minimal activity (rms channel sum) threshold to avoid unwanted activations
+			// minimal activity (rms channel sum) threshold to avoid unwanted activations
 			int sum = 0;
 			for (int i = 0; i < rms.length; i++) {
 				sum += rms[i];
 			}
 			
-			if (sum < 90){
+			if (sum < 70){
 				maxIndex = 8;
 			}
 			
