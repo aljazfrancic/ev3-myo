@@ -2,7 +2,7 @@
 ![ev3-myo](https://i.imgur.com/eaCzUaR.jpg "ev3-myo") 
 ## To use the project, you will need the following hardware ## 
 * [LEGO Mindstorms EV3](https://www.lego.com/en-us/mindstorms/products/mindstorms-ev3-31313) 
-	*  Follow [online assembly instructions](https://www.lego.com/r/www/r/mindstorms/-/media/franchises/mindstorms%202014/downloads/bi/31313_track3r_2016.pdf?l.r2=746618505) (pages 4-17, 20-27, 70-81) 
+	* Follow [online assembly instructions](https://www.lego.com/r/www/r/mindstorms/-/media/franchises/mindstorms%202014/downloads/bi/31313_track3r_2016.pdf?l.r2=746618505) (pages 4-17, 20-27, 70-81) 
 * [Myo Armband](https://www.myo.com/) 
 * Bluetooth enabled computer with Windows OS 
 * SD card for LEGO Mindstorms EV3 to install the leJOS firmware 
@@ -14,10 +14,9 @@
 * [Maven](https://maven.apache.org/download.cgi) 
 	* [Installation instructions](https://maven.apache.org/install.html) 
 	* To get required dependencies open cmd and move to ev3-myo subfolder using `cd` and then run the command `mvn eclipse:eclipse`. 
-* [leJOS plugin for Eclipse](https://sourceforge.net/p/lejos/wiki/Installing%20the%20Eclipse%20plugin/) 
-	* You will need to include the leJOS library in you project manually, by right-clicking the project in Eclipse after import, clicking Properties > Java Build Path > Libraries > Add Library and choose LeJOS Library Container > Next > Finish.  
 * [Pair the EV3 brick with your computer via Bluetooth and create PAN](https://sourceforge.net/p/lejos/wiki/Configuring%20Bluetooth%20PAN/) 
 	* Every time you reboot or disconnect from the Bluetooth PAN and you want to work with the EV3 brick again, you need to go to Control Panel > Hardware and Sound > Devices and Printers > right-click on you EV3 brick > Connect using > Access point to connect to the EV3 brick. You can also create a shortcut. 
+* [leJOS plugin for Eclipse](https://sourceforge.net/p/lejos/wiki/Installing%20the%20Eclipse%20plugin/) offers some additional functions for the LEGO Mindstorms EV3 brick via Eclipse, however it is not required to run the project. 
 ## To train your own models using the neural-net project, you will require ## 
 * [Anaconda](https://www.anaconda.com/download/) 
 	* Use Jupyter Notebook to open the neural-net.ipynb file in the neural-net subfolder. 
