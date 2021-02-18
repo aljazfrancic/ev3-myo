@@ -59,6 +59,13 @@
     </dependencyManagement>
 
     <dependencies>
+	    <!-- https://mvnrepository.com/artifact/com.github.bdeneuter/lejos-ev3-api -->
+		<dependency>
+		    <groupId>com.github.bdeneuter</groupId>
+		    <artifactId>lejos-ev3-api</artifactId>
+		    <version>0.9.1-beta</version>
+		</dependency>
+    
         <dependency>
             <groupId>org.nd4j</groupId>
             <artifactId>${nd4j.backend}</artifactId>
