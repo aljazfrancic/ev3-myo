@@ -30,5 +30,5 @@
 	* The main project in Java that enables robot control as well as EMG and IMU recording
 * neural-net 
 	* Python script for training the neural network using EMG and IMU recordings
-## PS ##
+## Disclaimer ##
 Some of the code is hacky at best. This is meant as a working prototype.
