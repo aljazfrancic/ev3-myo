@@ -1,5 +1,5 @@
 # ev3-myo #
-![ev3-myo](https://i.imgur.com/eaCzUaR.jpg "ev3-myo") 
+![ev3-myo](pics/schematic.png "ev3-myo") 
 ## To use the project, you will need the following hardware ## 
 * [LEGO Mindstorms EV3](https://www.lego.com/en-us/mindstorms/products/mindstorms-ev3-31313) 
 	* Follow [online assembly instructions](https://www.lego.com/r/www/r/mindstorms/-/media/franchises/mindstorms%202014/downloads/bi/31313_track3r_2016.pdf?l.r2=746618505) (pages 4-17, 20-27, 70-81) 
